@@ -2,12 +2,16 @@ Bootstrap: docker
 From: ubuntu:16.04
 
 %environment
-SHELL=/bin/bash
-PATH=/opt/anaconda/bin:${PATH}
-LC_ALL=C.UTF-8
-ROOTSYS=/opt/root/
-LD_LIBRARY_PATH=/opt/root/lib
+    LC_ALL=C.UTF-8 
+    SHELL=/bin/bash
+    PATH=/opt/anaconda/bin:${PATH}
+    ROOTSYS=/opt/root/
+    LD_LIBRARY_PATH=/opt/root/lib
 
+    #SHELL:=/bin/bash
+    #ROOTSYS=/bin/root
+    #PATH=$PATH:$ROOTSYS/bin
+    #LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTSYS/lib
 
 %runscript
     echo "This container is filled with jitterbugs"
@@ -35,5 +39,5 @@ LD_LIBRARY_PATH=/opt/root/lib
     conda config --add channels conda-forge
     conda config --add channels bioconda
     
-    cd /bin/ && wget https://github.com/elzbth/jitterbug.git
-    cd /bin/jitterbug
+    cd /opt/ && wget https://github.com/elzbth/jitterbug.git
+    cd /opt/jitterbug
