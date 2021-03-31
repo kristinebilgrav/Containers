@@ -39,5 +39,5 @@ From: ubuntu:16.04
     conda config --add channels conda-forge
     conda config --add channels bioconda
     
-    cd /opt/ && wget https://github.com/elzbth/jitterbug.git
+    cd /opt/ && git clone https://github.com/elzbth/jitterbug.git
     cd /opt/jitterbug
