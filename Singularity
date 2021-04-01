@@ -32,7 +32,7 @@ From: ubuntu:16.04
     pip install numpy
     pip install matplotlib
     pip install matplotlib-venn
-    pip install pybedtools psutil pandas memory_profiler 
+    pip install pybedtools psutil pandas memory_profiler csamtools
     
     conda update -n base -c defaults conda
     conda config --add channels defaults
