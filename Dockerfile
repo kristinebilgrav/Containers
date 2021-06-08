@@ -1,5 +1,5 @@
 FROM ubuntu:16.04 #parent image
-LABEL jitterbug
+LABEL software="jitterbug"
 
 RUN pip install pysam==0.8.1 numpy
 RUN pip install matplotlib matplotlib-venn
