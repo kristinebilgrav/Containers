@@ -1,4 +1,4 @@
-FROM ubuntu:16.04 #parent image
+FROM ubuntu:16.04 
 LABEL software="jitterbug"
 
 RUN pip install pysam==0.8.1 numpy
